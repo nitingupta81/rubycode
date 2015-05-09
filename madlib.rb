@@ -1,8 +1,5 @@
-puts "What's your name?"
-name = gets.chomp
-puts "Hi, " + name + "!"
-puts "I need to collect some information before constructing your Madlib!"
-puts " "
+def run_madlib(name)
+
 
 puts "Who is your favorite celebrity?"
 celebrity = gets.chomp
@@ -27,3 +24,18 @@ puts fruit + " had a great " +  part
 puts "All the king's " +  planet + " and all the king's " + color
 puts "Couldn't put " + fruit + " together again."
 puts " "
+end
+  
+  puts "What's your name?"
+name = gets.chomp
+puts "Hi, " + name + "!"
+puts "I need to collect some information before constructing your Madlib!"
+puts " "
+
+again="yes"
+while again != "no"
+  
+  run_madlib(name)
+  puts "That was enjoyable!  Would you like to play again? (Options: yes/no)"
+  again = gets.chomp
+end
